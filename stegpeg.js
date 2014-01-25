@@ -59,6 +59,20 @@ function runEncrypt()
 
 function runEncrypt2(ai, af)
 {
-	console.log(ai);
-	console.log(af);
+	var j = new JPEG();
+	try {
+		j.decode(ai);
+	} catch (e) {
+		alert('Failure decoding JPEG: ' + e.message);
+		return;
+	}
+
+	var b;
+	try {
+		b = j.encode();
+	} catch (e) {
+		alert('Failure encoding JPEG: ' + e.message);
+		return;
+	}
+
 }
