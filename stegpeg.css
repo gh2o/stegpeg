@@ -43,3 +43,10 @@ h1, h2, h3, h4, h5, h6 {
 	right: 10px;
 	bottom: 10px;
 }
+
+#rc > div > div > div > span {
+	position: absolute;
+	font-size: 32px;
+	color: gray;
+	opacity: 0.5;
+}
