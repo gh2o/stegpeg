@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+#rc {
+	max-width: 1000px;
+	margin: auto;
+}
+
+#rc > div {
+	float: left;
+	width: 48%;
+	padding: 0 1%;
+}
+
+#rc > div:nth-child(2) {
+	border-left: 1px solid black;
+	margin-left: -1px;
+}
+
+#rc > div > div > div:nth-child(2n+1) {
+	position: relative;
+	border: 10px solid lightgray;
+	padding: 10px;
+	min-height: 300px;
+}
+
+#rc > div > div > div:nth-child(2n) {
+	color: lightgray;
+	font-size: 64px;
+	text-align: center;
+}
+
+#rc > div > div > div > input[type="file"] {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}

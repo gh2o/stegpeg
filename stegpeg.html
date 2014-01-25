@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>StegPeg</title>
+		<link rel="stylesheet" type="text/css" href="stegpeg.css"/>
+		<script type="text/javascript" src="https://closure-library.googlecode.com/svn/trunk/closure/goog/base.js"></script>
+		<script type="text/javascript">
+			goog.require('goog.crypt.Aes');
+			goog.require('goog.crypt.Cbc');
+		</script>
+		<script type="text/javascript" src="stegpeg.js"></script>
+	</head>
+	<body>
+		<h1>StegPeg</h1>
+		<h3>Encrypt hidden files in JPEGs</h3>
+		<div id="rc">
+			<div>
+				<h4>Encrypt</h4>
+				<div>
+					<div>
+						<span>Original Image</span>
+						<input type="file"/>
+					</div>
+					<div>+</div>
+					<div>
+						<span>File</span>
+						<input type="file"/>
+					</div>
+					<div>&darr;</div>
+					<div>
+						<span>Image with Encrypted File</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h4>Decrypt</h4>
+				<div>
+					<div>
+						<span>Image with Encrypted File</span>
+					</div>
+					<div>&darr;</div>
+					<div>
+						<span>File</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
