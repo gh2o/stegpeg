@@ -3,6 +3,7 @@
 	<head>
 		<title>StegPeg</title>
 		<link rel="stylesheet" type="text/css" href="stegpeg.css"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
 		<script type="text/javascript" src="https://closure-library.googlecode.com/svn/trunk/closure/goog/base.js"></script>
 		<script type="text/javascript">
 			goog.require('goog.crypt.Aes');
@@ -17,31 +18,36 @@
 			<div>
 				<h4>Encrypt</h4>
 				<div>
-					<div>
+					<div class="box" id="enci">
 						<span>Original Image</span>
-						<input type="file"/>
+						<div class="imgw"><img/></div>
+						<input type="file" autocomplete="off" class="jpeginput" accept="image/jpeg"/>
 					</div>
 					<div>+</div>
-					<div>
+					<div class="box" id="encf">
 						<span>File</span>
-						<input type="file"/>
+						<div class="imgw"><img/></div>
+						<input type="file" autocomplete="off" class="fileinput"/>
 					</div>
 					<div>&darr;</div>
-					<div>
+					<div class="box" id="enco">
 						<span>Image with Encrypted File</span>
+						<div class="imgw"><img/></div>
 					</div>
 				</div>
 			</div>
 			<div>
 				<h4>Decrypt</h4>
 				<div>
-					<div>
+					<div class="box" id="deci">
 						<span>Image with Encrypted File</span>
-						<input type="file"/>
+						<div class="imgw"><img/></div>
+						<input type="file" autocomplete="off" class="jpeginput" accept="image/jpeg"/>
 					</div>
 					<div>&darr;</div>
-					<div>
+					<div class="box" id="deco">
 						<span>File</span>
+						<div class="imgw"><img/></div>
 					</div>
 				</div>
 			</div>
